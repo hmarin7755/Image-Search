@@ -18,6 +18,7 @@ class SearchBar extends React.Component {
                 textAlign: "center",
                 fontSize: "1.25em",
                 color: "#EDEDED",
+                paddingBottom: "10px",
               }}
             >
               Search Images
