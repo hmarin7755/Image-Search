@@ -1,5 +1,6 @@
 import React from "react";
 
+
 class SearchBar extends React.Component {
   state = { term: "" };
 
@@ -14,11 +15,14 @@ class SearchBar extends React.Component {
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
             <label
-              style={{
-                textAlign: "center",
-                fontSize: "1.25em",
-                color: "#EDEDED",
-                paddingBottom: "10px",
+              style={
+                {  
+                  textAlign: "center",
+                  fontSize: '1.6rem',
+                  lineHeight: '2.8rem',
+                  color: "#EDEDED",
+                  paddingBottom:'5px'
+
               }}
             >
               Search Images
@@ -26,8 +30,16 @@ class SearchBar extends React.Component {
             <input
               type="text"
               value={this.state.term}
-              placeholder="Search Anything . . . "
+              
               onChange={(e) => this.setState({ term: e.target.value })}
+              style={{
+                fontSize: '1.25rem',
+                padding: '0.2rem .5rem',
+                lineHeight: '2.5rem',
+                borderRadius: '20px',
+                backgroundColor: 'white',
+                marginBottom: '.25rem'
+              }}
             />
           </div>
         </form>
