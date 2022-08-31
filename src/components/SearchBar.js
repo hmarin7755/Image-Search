@@ -19,7 +19,7 @@ class SearchBar extends React.Component {
                 {  
                   textAlign: "center",
                   fontSize: '1.6rem',
-                  lineHeight: '2.8rem',
+                  lineHeight: '2.2rem',
                   color: "#EDEDED",
                   paddingBottom:'5px'
 
@@ -34,7 +34,7 @@ class SearchBar extends React.Component {
               onChange={(e) => this.setState({ term: e.target.value })}
               style={{
                 fontSize: '1.25rem',
-                padding: '0.2rem .5rem',
+                padding: '0.25rem 1.8rem',
                 lineHeight: '2.5rem',
                 borderRadius: '20px',
                 backgroundColor: 'white',
